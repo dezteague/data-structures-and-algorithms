@@ -8,5 +8,10 @@ namespace array_shift
         {
             Console.WriteLine("Hello World!");
         }
+
+        static void ArrayShift()
+        {
+
+        }
     }
 }
