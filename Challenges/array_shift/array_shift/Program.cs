@@ -8,6 +8,7 @@ namespace array_shift
         { 
             int[] inputArray = new int[] { 2, 4, 6, 8, 10, 11 };
             int addValue = 25;
+            //call in the parameters for external method
             int[] outputArray = ArrayShift(inputArray, addValue);
             for (int i = 0; i < outputArray.Length; i++)
             {
