@@ -2,38 +2,39 @@
 
 namespace array_binary_search
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             int[] binaryArray = new int[] { 4, 8, 15, 16, 23, 42 };
-    
             int integer = 15;
-
-            //int indexOfSortedArray = Method(parameters)
+            Console.WriteLine(BinarySearch(binaryArray, integer));
         }
 
-        static int BinarySearch(int[] binaryArray, int integer)
+        public static int BinarySearch(int[] binaryArray, int integer)
         {
-            int midpoint = binaryArray.Length/2;
+            //these variables will be used in conditional 
+            int min = 0;
+            int max = binaryArray.Length - 1;
 
-            if (integer == binaryArray[midpoint])
+            while(min <= max)
             {
-                return midpoint;
-            }
+                int midpoint = (min + max) / 2;
 
-            int arrayStart = binaryArray[0];
-            //int arrayFinish = binaryArray.Length -1;
-
-            if (integer < binaryArray[midpoint])
-            {
-                //return BinarySearch (binaryArray(from 0 to midpoint), integer)
+                if (binaryArray[midpoint] < integer)
+                {
+                    min = midpoint + 1;
+                }
+                else if (binaryArray[midpoint] > integer)
+                {
+                    max = midpoint - 1;
+                }
+                else
+                {
+                    return midpoint;
+                }
             }
-            else
-            {
-                //int offsetIndex = BinarySearch (binaryArray(from midpoint to end), integer)
-                if 
-            }
+            return -1;
         }
     }
 }
