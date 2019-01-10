@@ -6,6 +6,7 @@ namespace BinaryTest
 {
     public class UnitTest1
     {
+        //test whether or not the integer exists in the array
         [Fact]
         public void CanReturnNegativeOneTest()
         {
@@ -14,6 +15,7 @@ namespace BinaryTest
             Assert.Equal(-1, Program.BinarySearch(binaryArray, integer));
         }
 
+        //test for output of integer index in the array
         [Theory]
         [InlineData(new int[] { 1, 12, 39, 40, 52, 60 }, 40, 3)]
         [InlineData(new int[] { 11, 22, 35, 44, 56, 65 }, 22, 1)]
