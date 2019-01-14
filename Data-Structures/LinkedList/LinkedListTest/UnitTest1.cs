@@ -23,5 +23,16 @@ namespace LinkedListTest
             test.Insert(num);
             Assert.True(test.Includes(num));
         }
+
+        [Fact]
+        public void PrintAllValuesTest()
+        {
+            
+            LList test = new LList();
+            test.Insert(10);
+            test.Insert(20);
+            test.Insert(30);
+            Assert.True(test.Print());
+        }
     }
 }
