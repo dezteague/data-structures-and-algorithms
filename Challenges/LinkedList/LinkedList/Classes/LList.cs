@@ -51,6 +51,7 @@ namespace LinkedList.Classes
         {
             Console.Write("Head ->");
             Node Current = Head;
+            //loop through the Nodes until you get to the end, where Next = null
             while (Current.Next != null)
             {
                 Current = Current.Next;
@@ -58,7 +59,6 @@ namespace LinkedList.Classes
                 Console.Write("->");
             }
             Console.Write("null");
-            
         }
     }
 }
