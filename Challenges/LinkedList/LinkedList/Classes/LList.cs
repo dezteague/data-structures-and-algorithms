@@ -13,7 +13,10 @@ namespace LinkedList.Classes
         {
             //create a new node 
             Node node = new Node(value);
-
+            //set the "Next" of a new node to the head
+            node.Next = Head;
+            //then move the Head to point to the new Node
+            Head = node;
         }
     }
 }
