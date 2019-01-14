@@ -10,5 +10,5 @@ Implement a Singly Linked List Data Structure
 
 ## BIG O
 
-Time efficiency is O(logN) and memory space is O(n).    
+Time efficiency is O(1) additional node is added to the head and memory space is O(1) because we are not allocating additional memory.    
 
