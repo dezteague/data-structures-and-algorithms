@@ -6,4 +6,4 @@
 
 [2.Array Binary Search](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/array_binary_search) 
 
-[3.Linked List](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/LinkedList) 
+[3.Linked List](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Data-Structures/LinkedList) 
