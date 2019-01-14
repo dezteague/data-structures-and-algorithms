@@ -2,9 +2,7 @@
 
 Author: Deziree Teague
 
-Reference: 
-
-Linked list Implementation- https://www.codeproject.com/Articles/1104980/Linked-List-Implementation-in-Csharp
+Reference: Linked list Implementation- https://www.codeproject.com/Articles/1104980/Linked-List-Implementation-in-Csharp
 
 ## Challenge
 
