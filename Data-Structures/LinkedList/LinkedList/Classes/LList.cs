@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinkedList.Classes
 {
-    class LList
+    public class LList
     {
         //properties of Linked List Class: Head, Current
         public Node Head { get; set; }
