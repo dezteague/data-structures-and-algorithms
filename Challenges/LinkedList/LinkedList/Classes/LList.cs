@@ -46,5 +46,18 @@ namespace LinkedList.Classes
             //bool default
             return false;
         }
+
+        public void Print()
+        {
+            Console.Write("Head ->");
+            Node Current = Head;
+            while (Current.Next != null)
+            {
+                Current = Current.Next;
+                Console.Write(Current.Value);
+                Console.Write("->");
+            }
+            Console.Write("null");
+        }
     }
 }
