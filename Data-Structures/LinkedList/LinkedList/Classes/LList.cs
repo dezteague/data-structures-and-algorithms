@@ -63,7 +63,6 @@ namespace LinkedList.Classes
                 Console.Write("->");
             }
             Console.Write("null");
-            
         }
     }
 }

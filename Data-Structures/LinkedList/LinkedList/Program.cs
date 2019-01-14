@@ -19,10 +19,9 @@ namespace LinkedList
             list.Insert(4);
             list.Insert(8);
             list.Insert(15);
-            Console.WriteLine($"All node values{list.Print()}");
 
-            //Console.WriteLine($"Does 8 exist?{list.Includes(8)}");
-            //Console.WriteLine($"Does 18 exist?{list.Includes(18)}");
+            Console.WriteLine($"Does 8 exist?{list.Includes(8)}");
+            Console.WriteLine($"Does 18 exist?{list.Includes(18)}");
         }
     }
 }
