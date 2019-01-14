@@ -9,8 +9,11 @@ namespace LinkedList.Classes
         //properties of Linked List Class: Head, Current
         public Node Head { get; set; }
         public Node Current { get; set; }
-        
-        //to add a new value
+
+        /// <summary>
+        /// Add a new value
+        /// </summary>
+        /// <param name="value">value to be added</param>
         public void Insert(int value)
         {
             //create a new node 
@@ -21,8 +24,10 @@ namespace LinkedList.Classes
             Head = node;
         }
 
-        //to traverse through the data structure and see if a value exists. pass in a value to check
-        //method will return true or false
+        /// <summary>
+        /// traverse through the data structure and see if a value exists
+        /// </summary>
+        /// <param name="value">verify value exists</param>
         public bool Includes(int value)
         {
             //traversal starts at the beginning of the list, using the current node
@@ -47,6 +52,9 @@ namespace LinkedList.Classes
             return false;
         }
 
+        /// <summary>
+        /// Print all node values
+        /// </summary>
         public void Print()
         {
             Console.Write("Head ->");
