@@ -17,9 +17,6 @@ namespace LinkedList
                 list.Insert(arrayofValues[i]);
             }
             list.Print();
-        }
-        }
-
-       
+        }  
     }
 }
