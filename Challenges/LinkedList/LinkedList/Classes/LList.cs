@@ -9,11 +9,6 @@ namespace LinkedList.Classes
         //properties of Linked List Class: Head, Current
         public Node Head { get; set; }
         public Node Current { get; set; }
-
-        public LList(Node node)
-        {
-            Head = node;
-        }
         
         //to add a new value
         public void Insert(int value)
