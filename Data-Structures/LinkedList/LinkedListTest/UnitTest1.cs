@@ -15,6 +15,13 @@ namespace LinkedListTest
             Assert.Equal(5, test.Head.Value);
         }
 
-        
+        [Fact]
+        public void IncluedesValueTest()
+        {
+            int num = 5;
+            LList test = new LList();
+            test.Insert(num);
+            Assert.True(test.Includes(num));
+        }
     }
 }
