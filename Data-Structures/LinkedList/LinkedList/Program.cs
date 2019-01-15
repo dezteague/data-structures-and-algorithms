@@ -34,6 +34,8 @@ namespace LinkedList
                 Console.WriteLine($"Does 18 exist?{list.Includes(18)}");
 
                 list.Append(10);
+
+                list.InsertBefore(8, 22);
                 list.Print();
                 
         }

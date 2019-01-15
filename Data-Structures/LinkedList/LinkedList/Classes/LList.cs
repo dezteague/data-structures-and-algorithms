@@ -92,5 +92,38 @@ namespace LinkedList.Classes
             //current node points to new node
             Current.Next = node;
         }
+
+        /// <summary>
+        /// Insert a newValue before a given value
+        /// </summary>
+        /// <param name="value"></param>
+        /// // <param name="Newvalue"></param>
+        public void InsertBefore(int value, int newValue)
+        {
+            //starting at the Head node
+            Current = Head;
+            //if you hit the desired value, go ahead and insert newValue immediately
+            if(Current.Value == value)
+            {
+                Insert(newValue);
+                return;
+            }
+
+            while(Current.Next != null)
+            {
+                //1. find the .Next that equals the target
+                if(Current.Next.Value == value)
+                {
+                    //2. instantiate the new node
+                    Node node = new Node(newValue);
+                    //3. make node.Next = current.next
+                    node.Next = Current.Next;
+                    //4. make current.Next = node
+                    Current.Next = node;
+                    return;
+                }
+                Current = Current.Next;
+            }
+        }
     }
 }
