@@ -97,7 +97,7 @@ namespace LinkedList.Classes
         /// Insert a newValue before a given value
         /// </summary>
         /// <param name="value"></param>
-        /// // <param name="Newvalue"></param>
+        /// <param name="Newvalue"></param>
         public void InsertBefore(int value, int newValue)
         {
             //starting at the Head node
@@ -124,6 +124,31 @@ namespace LinkedList.Classes
                 }
                 Current = Current.Next;
             }
+        }
+
+        /// <summary>
+        /// Insert a newValue after a given value
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="Newvalue"></param>
+        public void InsertAfter(int value, int newValue)
+        {
+            Current = Head;
+
+            while (Current.Next != null)
+            {
+                //1. find the given value
+                if(Current.Value == value)
+                {
+                    //2. instantiate new node
+                    Node node = new Node(newValue);
+                    //3. make new node.Next = current.next
+                    node.Next = Current.Next;
+                    Current.Next = node;
+                    return;
+                }
+                Current = Current.Next;
+            }   
         }
     }
 }

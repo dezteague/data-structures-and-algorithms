@@ -36,6 +36,9 @@ namespace LinkedList
                 list.Append(10);
 
                 list.InsertBefore(8, 22);
+
+                list.InsertAfter(4, 33);
+
                 list.Print();
                 
         }
