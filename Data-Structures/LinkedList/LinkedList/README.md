@@ -12,5 +12,7 @@ Append values, Insert Before, Insert After
 
 ## BIG O
 
-Time efficiency is O(1) additional node is added to the head and memory space is O(1) because we are not allocating additional memory.    
+Time efficiency is O(1) additional node is added to the head and memory space is O(1) because we are not allocating additional memory. 
+
+![ll insertions](https://github.com/dezteague/data-structures-and-algorithms/blob/master/Assets/LinkedListInsertions.JPG)
 
