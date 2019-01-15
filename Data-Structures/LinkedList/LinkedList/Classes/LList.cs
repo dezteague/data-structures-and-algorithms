@@ -82,6 +82,7 @@ namespace LinkedList.Classes
         /// <param name="value">verify value exists</param>
         public void Append(int value)
         {
+            Current = Head;
             //if next is not null, we are not at the end of the list yet
             while (Current.Next != null)
             {
