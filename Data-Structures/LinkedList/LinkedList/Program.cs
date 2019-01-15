@@ -33,7 +33,7 @@ namespace LinkedList
                 Console.WriteLine($"Does 8 exist?{list.Includes(8)}");
                 Console.WriteLine($"Does 18 exist?{list.Includes(18)}");
 
-            list.Print();
+                list.Print();
         }
             
         }  
