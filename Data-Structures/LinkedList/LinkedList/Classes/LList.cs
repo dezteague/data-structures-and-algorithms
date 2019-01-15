@@ -55,7 +55,7 @@ namespace LinkedList.Classes
         /// <summary>
         /// Print all node values
         /// </summary>
-        public void Print()
+        public bool Print()
         {
             if(Head != null)
             {
@@ -73,7 +73,7 @@ namespace LinkedList.Classes
             {
                 Console.WriteLine("Your list is empty");
             }
-            
+            return true;
         }
 
        
