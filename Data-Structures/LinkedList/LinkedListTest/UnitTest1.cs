@@ -43,5 +43,26 @@ namespace LinkedListTest
             test.Insert(30);
             Assert.True(test.Print());
         }
+
+        [Fact]
+        public void AppendValueTest()
+        {
+            LList test = new LList();
+            int[] testvalues = new int[] { 1, 2, 3 };
+            test.Append(66);
+            
+        }
+
+        [Fact]
+        public void InsertValueBeforeTest()
+        {
+            
+        }
+
+        [Fact]
+        public void InsertValueAfterTest()
+        {
+            
+        }
     }
 }
