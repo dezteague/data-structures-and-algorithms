@@ -57,16 +57,25 @@ namespace LinkedList.Classes
         /// </summary>
         public void Print()
         {
-            Console.Write("Head ->");
-            Node Current = Head;
-            //loop through the Nodes until you get to the end, where Next = null
-            while (Current.Next != null)
+            if(Head != null)
             {
-                Current = Current.Next;
-                Console.Write(Current.Value);
-                Console.Write("->");
+                //Console.Write("Head ->");
+                Current = Head;
+                //loop through the Nodes until you get to the end, where Next = null
+                while (Current.Next != null)
+                {
+                    System.Console.WriteLine($"{Current.Value} =>");
+                    Current = Current.Next;
+                }
+                System.Console.WriteLine($"{Current.Value} => null");
             }
-            Console.Write("null");
+            else
+            {
+                Console.WriteLine("Your list is empty");
+            }
+            
         }
+
+       
     }
 }

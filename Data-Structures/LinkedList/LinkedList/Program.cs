@@ -8,6 +8,10 @@ namespace LinkedList
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            NodeExample();
+        }
+            /*
+            Console.WriteLine("Hello World!");
             //instantiate a new list
             LList list = new LList();
             //using these values
@@ -15,8 +19,23 @@ namespace LinkedList
             for (int i =0; i < arrayofValues.Length; i++)
             {
                 list.Insert(arrayofValues[i]);
-            }
+            }*/
+
+            static void NodeExample()
+            {
+                Node node = new Node(8);
+                Console.WriteLine(node.Value);
+                LList list = new LList();
+                list.Insert(4);
+                list.Insert(8);
+                list.Insert(15);
+
+                Console.WriteLine($"Does 8 exist?{list.Includes(8)}");
+                Console.WriteLine($"Does 18 exist?{list.Includes(18)}");
+
             list.Print();
+        }
+            
         }  
     }
-}
+
