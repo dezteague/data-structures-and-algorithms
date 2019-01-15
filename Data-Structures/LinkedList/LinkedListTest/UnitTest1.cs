@@ -16,12 +16,21 @@ namespace LinkedListTest
         }
 
         [Fact]
-        public void IncluedesValueTest()
+        public void IncludesValueTest()
         {
             int num = 5;
             LList test = new LList();
             test.Insert(num);
             Assert.True(test.Includes(num));
+        }
+
+        [Fact]
+        public void NonExistentValueTest()
+        {
+            
+            LList test = new LList();
+            test.Insert(55);
+            Assert.False(test.Includes(5));
         }
 
         [Fact]
