@@ -76,6 +76,21 @@ namespace LinkedList.Classes
             return true;
         }
 
-       
+        /// <summary>
+        /// Append to the end of the list
+        /// </summary>
+        /// <param name="value">verify value exists</param>
+        public void Append(int value)
+        {
+            //if next is not null, we are not at the end of the list yet
+            while (Current.Next != null)
+            {
+                Current = Current.Next;
+            }
+            //instantiate new node
+            Node node = new Node(value);
+            //current node points to new node
+            Current.Next = node;
+        }
     }
 }
