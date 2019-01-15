@@ -33,7 +33,14 @@ namespace LinkedList
                 Console.WriteLine($"Does 8 exist?{list.Includes(8)}");
                 Console.WriteLine($"Does 18 exist?{list.Includes(18)}");
 
+                list.Append(10);
+
+                list.InsertBefore(8, 22);
+
+                list.InsertAfter(4, 33);
+
                 list.Print();
+                
         }
             
         }  
