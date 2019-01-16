@@ -3,13 +3,16 @@ using LinkedList.Classes;
 
 namespace ll_kth_from_end
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            
+
             //instantiate linked list and insert values
+            Console.WriteLine("linked list");
+            Console.WriteLine("");
+
             LList list = new LList();
             list.Insert(4);
             list.Insert(8);
@@ -18,6 +21,8 @@ namespace ll_kth_from_end
             list.Insert(31);
             list.Insert(44);
             list.Print();
+            Console.WriteLine("");
+
             //invoke the method using list and k as parameters
             Console.WriteLine($"1st value from the end: {FindKthFromEnd(list, 0)}");
             Console.WriteLine($"2nd value from the end: {FindKthFromEnd(list, 1)}");
