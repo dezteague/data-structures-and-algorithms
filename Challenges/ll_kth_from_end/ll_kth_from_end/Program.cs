@@ -19,7 +19,12 @@ namespace ll_kth_from_end
             list.Insert(44);
             list.Print();
             //invoke the method using list and k as parameters
-            Console.WriteLine($"{FindKthFromEnd(list, 0)}");
+            Console.WriteLine($"1st value from the end: {FindKthFromEnd(list, 0)}");
+            Console.WriteLine($"2nd value from the end: {FindKthFromEnd(list, 1)}");
+            Console.WriteLine($"3rd value from the end: {FindKthFromEnd(list, 2)}");
+            Console.WriteLine($"4th value from the end: {FindKthFromEnd(list, 3)}");
+            Console.WriteLine($"5th value from the end: {FindKthFromEnd(list, 4)}");
+            Console.WriteLine($"6th value from the end: {FindKthFromEnd(list, 5)}");
 
             Console.ReadLine();
         }
