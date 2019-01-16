@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 using LinkedList.Classes;
-using LinkedList;
+using ll_kth_from_end;
 
 namespace KthFromEndTest
 {
