@@ -6,58 +6,61 @@ namespace ll_merge
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             LList listOne = new LList();
+            listOne.Insert(1);
+            listOne.Insert(2);
+            listOne.Insert(3);
             LList listTwo = new LList();
+            listTwo.Insert(4);
+            listTwo.Insert(5);
+            listTwo.Insert(6);
+     
+            Console.ReadLine();
         }
 
         public static LList LLMerge(LList llone, LList lltwo)
         {
-            llone.Current = lltwo.Head;
-            int counterOne = 0;
+            Node lloneCurrent = null;
+            Node lltwoCurrent = null;
 
-            //go through the length of llone, incrementing to add to total merge length
-            while (llone.Current.Next != null)
+            if (llone.Head != null)
             {
-                llone.Current = llone.Current.Next;
-                counterOne++;
+                lloneCurrent = llone.Head;
+            }
+            else
+            {
+                return lltwo;
             }
 
-            lltwo.Current = lltwo.Head;
-            int countertwo = 0;
-
-            //repeat for second list, the length will be added to total for merge list
-            while (lltwo.Current.Next != null)
+            if (lltwo.Head != null)
             {
-                lltwo.Current = lltwo.Current.Next;
-                countertwo++;
+                lltwoCurrent = lltwo.Head;
+            }
+            else
+            {
+                return llone;
             }
 
-            //add two counters together to get the length of the merged list
-            int mergedlistcounter = counterOne + countertwo;
+           
+            Node lloneNext = lloneCurrent.Next;
+            Node lltwoNext = lltwoCurrent.Next;
 
-            //go back to list one
-            //start at the head
-            llone.Current = llone.Head;
-            //if the new merged counter is at least one
-            while(mergedlistcounter > 1)
+            while(llone.Current != null && lltwo.Current != null)
             {
-                if (llone.Current.Next != null)
-                {
-                    //insert the value of list two after the list one head
-                    llone.InsertAfter(llone.Head.Value, lltwo.Current.Value);
-                    llone.Current = llone.Current.Next;
-                }
-                else
-                {
-                    llone.Current = lltwo.Current.Next;
-                }
-                //decrement the merged list counter
-                mergedlistcounter--;
+                lloneCurrent.Next = lltwoCurrent;
+                lltwoCurrent.Next = lloneNext;
+
+                lloneCurrent = lloneNext;
+                lltwoCurrent = lltwoNext;
+
+                lloneNext = lloneCurrent.Next;
+                lltwoNext = lltwoCurrent.Next;
             }
-            return llone;
+
+            return llone; 
         }
     }
 }
