@@ -9,5 +9,12 @@ namespace StacksAndQueues.Classes
         //top property
         public Node Top { get; set; }
 
+        /// <summary>
+        /// Instantiate an empty stack
+        /// </summary>
+        public Stack()
+        {
+
+        }
     }
 }
