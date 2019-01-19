@@ -16,5 +16,13 @@ namespace StacksAndQueues.Classes
         {
 
         }
+
+        /// <summary>
+        /// Default empty value assigned to top
+        /// </summary>
+        public Stack(Node node)
+        {
+            Top = node;
+        }
     }
 }
