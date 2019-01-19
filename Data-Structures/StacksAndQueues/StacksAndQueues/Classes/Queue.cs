@@ -43,6 +43,10 @@ namespace StacksAndQueues.Classes
             Rear = node;
         }
 
+        /// <summary>
+        /// Add a new node to the rear
+        /// </summary>
+        /// <returns>temp</returns>
         public Node Dequeue()
         {
             //create a temp node to hold the original front
@@ -53,6 +57,15 @@ namespace StacksAndQueues.Classes
             temp.Next = null;
             //return the temp node
             return temp;
+        }
+
+        /// <summary>
+        /// Show the front node in the queue
+        /// </summary>
+        /// <returns>temp</returns>
+        public Node Peek()
+        {
+            return Front;
         }
     }
 }
