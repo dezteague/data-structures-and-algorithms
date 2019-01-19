@@ -45,7 +45,14 @@ namespace StacksAndQueues.Classes
 
         public Node Dequeue()
         {
-
+            //create a temp node to hold the original front
+            Node temp = Front;
+            //change the front refernce to next node
+            Front = Front.Next;
+            //clear our the next reference for the node that stands alone
+            temp.Next = null;
+            //return the temp node
+            return temp;
         }
     }
 }
