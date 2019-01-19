@@ -57,5 +57,13 @@ namespace StacksAndQueues.Classes
             return temp;
         }
 
+        /// <summary>
+        /// Show the top node in the stack
+        /// </summary>
+        /// <returns>temp</returns>
+        public Node Peek()
+        {
+            return Top;
+        }
     }
 }
