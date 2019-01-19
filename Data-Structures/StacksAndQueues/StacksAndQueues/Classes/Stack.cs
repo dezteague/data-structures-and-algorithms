@@ -19,6 +19,7 @@ namespace StacksAndQueues.Classes
 
         /// <summary>
         /// Default empty value assigned to top
+        /// <param name="node">node</param>
         /// </summary>
         public Stack(Node node)
         {
@@ -27,6 +28,7 @@ namespace StacksAndQueues.Classes
 
         /// <summary>
         /// Add a new node to the top
+        /// <param name="value">value</param>
         /// </summary>
         public void Push(int value)
         {
@@ -37,5 +39,23 @@ namespace StacksAndQueues.Classes
             //new node is now the top
             Top = node;
         }
+
+        /// <summary>
+        /// Remove node from the top
+        /// <param name="value">value</param>
+        /// </summary>
+        /// <returns>temp</returns>
+        public Node Pop()
+        {
+            //create a temporary node
+            Node temp = Top;
+            //set the top to the next node
+            Top = Top.Next;
+            //clear the reference to next on the temp
+            temp.Next = null;
+            //return the temp node
+            return temp;
+        }
+
     }
 }
