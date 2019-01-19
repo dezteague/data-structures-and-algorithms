@@ -24,5 +24,18 @@ namespace StacksAndQueues.Classes
         {
             Top = node;
         }
+
+        /// <summary>
+        /// Add a new node to the top
+        /// </summary>
+        public void Push(int value)
+        {
+            //instantiate a new node using the value
+            Node node = new Node(value);
+            //set the next of the new node to the top
+            node.Next = Top;
+            //new node is now the top
+            Top = node;
+        }
     }
 }
