@@ -28,7 +28,7 @@ namespace StacksAndQueues.Classes
 
         /// <summary>
         /// Add a new node to the top
-        /// <param name="value">value</param>
+        /// <param name="value">int</param>
         /// </summary>
         public void Push(int value)
         {
@@ -42,7 +42,6 @@ namespace StacksAndQueues.Classes
 
         /// <summary>
         /// Remove node from the top
-        /// <param name="value">value</param>
         /// </summary>
         /// <returns>temp</returns>
         public Node Pop()
