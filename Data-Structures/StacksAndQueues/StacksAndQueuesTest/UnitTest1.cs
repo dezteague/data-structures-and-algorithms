@@ -125,5 +125,53 @@ namespace StacksAndQueuesTest
             //new peek value is 3
             Assert.Equal(3, p.Value);
         }
+
+        [Fact]
+        public void EnqueueFirstNodeTest()
+        {
+            //instantiate new node with int value
+            Node node = new Node(1);
+            //instantiate new queue, pass in the value of the node
+            Queue queue = new Queue(node);
+            //add in the value 
+            queue.Enqueue(1);
+            //new rear value is 1
+            Assert.Equal(1, queue.Rear.Value);
+        }
+
+        [Fact]
+        public void EnqueueSecondNodeTest()
+        {
+            //instantiate new node with int value
+            Node node = new Node(1);
+            Node node2 = new Node(2);
+            //instantiate new queue, pass in the value of the node
+            Queue queue = new Queue(node);
+            Queue queue2 = new Queue(node2);
+            //add in the value 
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            //new rear value is 2
+            Assert.Equal(2, queue.Rear.Value);
+        }
+
+        [Fact]
+        public void EnqueueThirdNodeTest()
+        {
+            //instantiate new node with int value
+            Node node = new Node(1);
+            Node node2 = new Node(2);
+            Node node3 = new Node(3);
+            //instantiate new queue, pass in the value of the node
+            Queue queue = new Queue(node);
+            Queue queue2 = new Queue(node2);
+            Queue queue3 = new Queue(node3);
+            //add in the value 
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            //new rear value is 3
+            Assert.Equal(3, queue.Rear.Value);
+        }
     }
 }
