@@ -4,10 +4,9 @@ using System.Text;
 
 namespace StacksAndQueues.Classes
 {
-    class Queue
+    public class Queue
     {
         //top property
-        public Node Top { get; set; }
         public Node Front { get; set; }
         public Node Rear { get; set; }
 
