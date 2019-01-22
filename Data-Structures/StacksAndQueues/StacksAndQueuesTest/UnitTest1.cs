@@ -85,7 +85,7 @@ namespace StacksAndQueuesTest
         }
 
         [Fact]
-        public void PeekFirstNodeFromStackTest()
+        public void PeekFirstNodeInStackTest()
         {
             //instantiate new stack
             Stack stack = new Stack();
@@ -98,7 +98,7 @@ namespace StacksAndQueuesTest
         }
 
         [Fact]
-        public void PeekSecondNodeFromStackTest()
+        public void PeekSecondPushToStackTest()
         {
             //instantiate new stack
             Stack stack = new Stack();
@@ -112,7 +112,7 @@ namespace StacksAndQueuesTest
         }
 
         [Fact]
-        public void PeekThirdNodeFromStackTest()
+        public void PeekThirdPushToStackTest()
         {
             //instantiate new stack
             Stack stack = new Stack();
@@ -136,7 +136,7 @@ namespace StacksAndQueuesTest
             //add in the value 
             queue.Enqueue(1);
             //new rear value is 1
-            Assert.Equal(1, queue.Rear.Value);
+            Assert.Equal(1, queue.Front.Value);
         }
 
         [Fact]
@@ -180,7 +180,7 @@ namespace StacksAndQueuesTest
         }
 
         [Fact]
-        public void DequeueSecondNodeTest()
+        public void DequeueOneOfTwoNodesTest()
         {
             //instantiate new node with int value
             Node node = new Node(1);
@@ -195,7 +195,7 @@ namespace StacksAndQueuesTest
         }
    
         [Fact]
-        public void DequeueThirdNodeTest()
+        public void DequeueTwoofThreeNodesTest()
         {
             //instantiate new node with int value
             Node node = new Node(1);
@@ -209,6 +209,54 @@ namespace StacksAndQueuesTest
             queue.Dequeue();
             //new front value 
             Assert.Equal(3, queue.Front.Value);
+        }
+
+        [Fact]
+        public void PeekNodeInQueueTest()
+        {
+            //instantiate new node with int value
+            Node node = new Node(1);
+            //instantiate new stack
+            Queue queue = new Queue(node);
+            //push in the value 
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            //invoke peek method
+            Node p = queue.Peek();
+            //new peek value is 1
+            Assert.Equal(1, p.Value);
+        }
+
+        [Fact]
+        public void SecondPeekNodeInQueueTest()
+        {
+            //instantiate new node with int value
+            Node node = new Node(4);
+            //instantiate new stack
+            Queue queue = new Queue(node);
+            //push in the value 
+            queue.Enqueue(5);
+            queue.Enqueue(6);
+            //invoke peek method
+            Node p = queue.Peek();
+            //new peek value is 1
+            Assert.Equal(4, p.Value);
+        }
+
+        [Fact]
+        public void ThirdPeekNodeInQueueTest()
+        {
+            //instantiate new node with int value
+            Node node = new Node(7);
+            //instantiate new stack
+            Queue queue = new Queue(node);
+            //push in the value 
+            queue.Enqueue(8);
+            queue.Enqueue(9);
+            //invoke peek method
+            Node p = queue.Peek();
+            //new peek value is 1
+            Assert.Equal(7, p.Value);
         }
     }
 }
