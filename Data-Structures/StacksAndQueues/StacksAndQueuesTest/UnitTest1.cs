@@ -83,5 +83,47 @@ namespace StacksAndQueuesTest
             //new top value is null
             Assert.True(stack.Top == null);
         }
+
+        [Fact]
+        public void PeekFirstNodeFromStackTest()
+        {
+            //instantiate new stack
+            Stack stack = new Stack();
+            //push in the value 
+            stack.Push(1);
+            //invoke peek method
+            Node p = stack.Peek();
+            //new peek value is 1
+            Assert.Equal(1, p.Value);
+        }
+
+        [Fact]
+        public void PeekSecondNodeFromStackTest()
+        {
+            //instantiate new stack
+            Stack stack = new Stack();
+            //push in the value 
+            stack.Push(1);
+            stack.Push(2);
+            //invoke peek method
+            Node p = stack.Peek();
+            //new peek value is 2
+            Assert.Equal(2, p.Value);
+        }
+
+        [Fact]
+        public void PeekThirdNodeFromStackTest()
+        {
+            //instantiate new stack
+            Stack stack = new Stack();
+            //push in the value 
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            //invoke peek method
+            Node p = stack.Peek();
+            //new peek value is 3
+            Assert.Equal(3, p.Value);
+        }
     }
 }
