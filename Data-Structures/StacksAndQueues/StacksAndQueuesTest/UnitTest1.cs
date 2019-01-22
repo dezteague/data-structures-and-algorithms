@@ -72,7 +72,7 @@ namespace StacksAndQueuesTest
         }
 
         [Fact]
-        public void PopFirstNodeFromStackTest()
+        public void PopSingleNodeFromStackTest()
         {
             //instantiate new stack
             Stack stack = new Stack();
@@ -142,14 +142,11 @@ namespace StacksAndQueuesTest
         [Fact]
         public void EnqueueSecondNodeTest()
         {
-            //instantiate new node with int value
+            //instantiate new node with int value (only need one value to start)
             Node node = new Node(1);
-            Node node2 = new Node(2);
             //instantiate new queue, pass in the value of the node
             Queue queue = new Queue(node);
-            Queue queue2 = new Queue(node2);
             //add in the value 
-            queue.Enqueue(1);
             queue.Enqueue(2);
             //new rear value is 2
             Assert.Equal(2, queue.Rear.Value);
@@ -160,18 +157,58 @@ namespace StacksAndQueuesTest
         {
             //instantiate new node with int value
             Node node = new Node(1);
-            Node node2 = new Node(2);
-            Node node3 = new Node(3);
             //instantiate new queue, pass in the value of the node
             Queue queue = new Queue(node);
-            Queue queue2 = new Queue(node2);
-            Queue queue3 = new Queue(node3);
-            //add in the value 
-            queue.Enqueue(1);
+            //add in the values
             queue.Enqueue(2);
             queue.Enqueue(3);
             //new rear value is 3
             Assert.Equal(3, queue.Rear.Value);
+        }
+
+        [Fact]
+        public void DequeueSingleNodeTest()
+        {
+            //instantiate new node with int value
+            Node node = new Node(1);
+            //instantiate new queue, pass in the value of the node
+            Queue queue = new Queue(node);
+            //remove the value
+            queue.Dequeue();
+            //new front value 
+            Assert.True(queue.Front == null);
+        }
+
+        [Fact]
+        public void DequeueSecondNodeTest()
+        {
+            //instantiate new node with int value
+            Node node = new Node(1);
+            //instantiate new queue, pass in the value of the node
+            Queue queue = new Queue(node);
+            //add in the values
+            queue.Enqueue(2);
+            //remove the front value
+            queue.Dequeue();
+            //new front value 
+            Assert.Equal(2, queue.Front.Value);
+        }
+   
+        [Fact]
+        public void DequeueThirdNodeTest()
+        {
+            //instantiate new node with int value
+            Node node = new Node(1);
+            //instantiate new queue, pass in the value of the node
+            Queue queue = new Queue(node);
+            //add in the values
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            //remove the front values
+            queue.Dequeue();
+            queue.Dequeue();
+            //new front value 
+            Assert.Equal(3, queue.Front.Value);
         }
     }
 }
