@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueWithStacks", "QueueWithStacks\QueueWithStacks.csproj", "{B629396E-FEDC-426D-81A5-3F8EDCE64AB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueWithStacksTest", "QueueWithStacksTest\QueueWithStacksTest.csproj", "{9DD89D7A-6641-42C8-BCB8-13E009252047}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B629396E-FEDC-426D-81A5-3F8EDCE64AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B629396E-FEDC-426D-81A5-3F8EDCE64AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B629396E-FEDC-426D-81A5-3F8EDCE64AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B629396E-FEDC-426D-81A5-3F8EDCE64AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DD89D7A-6641-42C8-BCB8-13E009252047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD89D7A-6641-42C8-BCB8-13E009252047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DD89D7A-6641-42C8-BCB8-13E009252047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DD89D7A-6641-42C8-BCB8-13E009252047}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52B8D896-6D19-4C9D-8B80-A84A80B47C5A}
+	EndGlobalSection
+EndGlobal
