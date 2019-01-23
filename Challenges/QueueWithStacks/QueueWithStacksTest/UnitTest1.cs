@@ -73,8 +73,47 @@ namespace QueueWithStacksTest
 
             pseudoQueue.Dequeue(StackOne, StackTwo);
 
-            //assert- new top simulates enqueue via rear
-            Assert.Equal(20, StackOne.Top.Value);
+            //assert- new top simulates FIFO
+            Assert.Equal(15, StackTwo.Top.Value);
+        }
+
+        [Fact]
+        public void DequeueSecondNodeTest()
+        {
+            //arrange- instantiate new stacks
+            Stack StackOne = new Stack();
+            Stack StackTwo = new Stack();
+            //instantiate psuedoqueue object
+            PseudoQueue pseudoQueue = new PseudoQueue();
+
+            //act- input the value 25 top of stack one (rear of queue)
+            pseudoQueue.Enqueue(StackOne, 15);
+            pseudoQueue.Enqueue(StackOne, 20);
+            pseudoQueue.Enqueue(StackOne, 25);
+
+            pseudoQueue.Dequeue(StackOne, StackTwo);
+
+            //assert- new top simulates FIFO
+            Assert.Equal(20, StackTwo.Top.Value);
+        }
+
+        [Fact]
+        public void DequeueThirdNodeTest()
+        {
+            //arrange- instantiate new stacks
+            Stack StackOne = new Stack();
+            Stack StackTwo = new Stack();
+            //instantiate psuedoqueue object
+            PseudoQueue pseudoQueue = new PseudoQueue();
+
+            //act- input the value 25 top of stack one (rear of queue)
+            pseudoQueue.Enqueue(StackOne, 20);
+            pseudoQueue.Enqueue(StackOne, 25);
+
+            pseudoQueue.Dequeue(StackOne, StackTwo);
+
+            //assert- new top simulates FIFO
+            Assert.Equal(25, StackTwo.Top.Value);
         }
     }
 }
