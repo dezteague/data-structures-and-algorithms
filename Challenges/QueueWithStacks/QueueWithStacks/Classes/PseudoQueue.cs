@@ -17,20 +17,20 @@ namespace QueueWithStacks.Classes
         public void Dequeue(Stack StackOne, Stack StackTwo)
         {
             //if stack two is not empty
-            if (StackTwo != null)
+            if (StackTwo.Top != null)
             {
                 //Pop the values from StackTwo
                 StackTwo.Pop();
             }
             else
             {
-                while(StackOne != null)
+                while(StackOne.Top != null)
                 {
                     //pop the values from stack one and push them into stack two
                     StackTwo.Push(StackOne.Pop().Value);
                 }
             }
-            //in the end, pop the values from stack two
+            //in the end, pop the values from stack two to demonstrate FIFO functionality
             StackTwo.Pop();
         }
     }
