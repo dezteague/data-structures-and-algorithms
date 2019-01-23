@@ -9,7 +9,7 @@ namespace QueueWithStacksTest
     public class UnitTest1
     {
         [Fact]
-        public void EnqueueOne()
+        public void EnqueueFirstNodeTest()
         {
             //arrange- instantiate new stack
             Stack StackOne = new Stack();
@@ -24,7 +24,7 @@ namespace QueueWithStacksTest
         }
 
         [Fact]
-        public void EnqueueTwo()
+        public void EnqueueSecondNodeTest()
         {
             //arrange- instantiate new stack
             Stack StackOne = new Stack();
@@ -40,7 +40,7 @@ namespace QueueWithStacksTest
         }
 
         [Fact]
-        public void EnqueueThree()
+        public void EnqueueThirdNodeTest()
         {
             //arrange- instantiate new stack
             Stack StackOne = new Stack();
@@ -51,6 +51,27 @@ namespace QueueWithStacksTest
             pseudoQueue.Enqueue(StackOne, 10);
             pseudoQueue.Enqueue(StackOne, 15);
             pseudoQueue.Enqueue(StackOne, 20);
+
+            //assert- new top simulates enqueue via rear
+            Assert.Equal(20, StackOne.Top.Value);
+        }
+
+        [Fact]
+        public void DequeueFirstNodeTest()
+        {
+            //arrange- instantiate new stacks
+            Stack StackOne = new Stack();
+            Stack StackTwo = new Stack();
+            //instantiate psuedoqueue object
+            PseudoQueue pseudoQueue = new PseudoQueue();
+
+            //act- input the value 25 top of stack one (rear of queue)
+            pseudoQueue.Enqueue(StackOne, 10);
+            pseudoQueue.Enqueue(StackOne, 15);
+            pseudoQueue.Enqueue(StackOne, 20);
+            pseudoQueue.Enqueue(StackOne, 25);
+
+            pseudoQueue.Dequeue(StackOne, StackTwo);
 
             //assert- new top simulates enqueue via rear
             Assert.Equal(20, StackOne.Top.Value);
