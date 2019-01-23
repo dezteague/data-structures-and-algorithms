@@ -13,3 +13,5 @@
 [5.Challenge: LL Merge](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/ll_merge)
 
 [6.Implementation: Stacks and Queues](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Data-Structures/StacksAndQueues)
+
+[7.Challenge: Queue Using Stacks](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/QueueWithStacks)
