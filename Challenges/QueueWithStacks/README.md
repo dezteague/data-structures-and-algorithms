@@ -1,6 +1,6 @@
 ## Queue with Stacks
 
-## Author: Deziree Teague 
+Author: Deziree Teague 
 
 Collaborator: Ryna Truong
 
@@ -10,7 +10,7 @@ Implement a queue using two stacks
 
 ## BIG O
 
-O(1).    
+Time operations is O(1).    
 
 ## White board layout
 
