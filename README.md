@@ -15,3 +15,5 @@
 [6.Implementation: Stacks and Queues](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Data-Structures/StacksAndQueues)
 
 [7.Challenge: Queue Using Stacks](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/QueueWithStacks)
+
+[8.Challenge: FIFO Animal Shelter](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/fifo_animal_shelter)
