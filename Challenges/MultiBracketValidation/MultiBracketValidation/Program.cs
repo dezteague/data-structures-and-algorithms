@@ -66,7 +66,7 @@ namespace MultiBracketValidation
                 }
             }
                 //if the stack is empty, all the brackets have been matched
-                if (openingBracketStack == null)
+                if (openingBracketStack.Top == null)
                 {
                     return true;
                 }
