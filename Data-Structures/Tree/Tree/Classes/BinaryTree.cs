@@ -16,7 +16,7 @@ namespace Tree.Classes
         //preOrder
         public void PreOrder(Node root)
         {
-            //output = node.value
+            //output = root.value
 
             if (root.LeftChild != null)
             {
@@ -36,7 +36,7 @@ namespace Tree.Classes
                 InOrder(root.LeftChild);
             }
             
-            //output = node.value
+            //output = root.value
 
             if(root.RightChild != null)
             {
@@ -56,7 +56,7 @@ namespace Tree.Classes
                 InOrder(root.RightChild);
             }
 
-            //output = node.value
+            //output = root.value
         }
     }
 }
