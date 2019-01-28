@@ -8,15 +8,23 @@ namespace Tree.Classes
     {
         public Node Root { get; set; }
 
+        //create a list so that it can adjust dynamically
+        public List<int> arrayofInts = new List<int>();
+
         public BinaryTree(Node node)
         {
             Root = node;
         }
 
-        //preOrder
-        public void PreOrder(Node root)
+        /// <summary>
+        /// Look at the root first
+        /// </summary>
+        /// <param name="root"></param>
+        /// <returns>array of integers</returns>
+        public int[] PreOrder(Node root)
         {
             //output = root.value
+            arrayofInts.Add(root.Value);
 
             if (root.LeftChild != null)
             {
@@ -26,26 +34,38 @@ namespace Tree.Classes
             {
                 PreOrder(root.RightChild);
             }
+
+            return arrayofInts.ToArray();
         }
-            
-        //inOrder
-        public void InOrder(Node root)
+
+        /// <summary>
+        /// return children first and roots in between
+        /// </summary>
+        /// <param name="root"></param>
+        /// <returns>An array</returns>
+        public int[] InOrder(Node root)
         {
             if(root.LeftChild != null)
             {
                 InOrder(root.LeftChild);
             }
-            
-            //output = root.value
+
+            arrayofInts.Add(root.Value);
 
             if(root.RightChild != null)
             {
                 InOrder(root.RightChild);
             }
+
+            return arrayofInts.ToArray();
         }
 
-        //postOrder
-        public void PostOrder(Node root)
+        /// <summary>
+        /// returns children first and root last
+        /// </summary>
+        /// <param name="root"></param>
+        /// <returns>An array</returns>
+        public int[] PostOrder(Node root)
         {
             if (root.LeftChild != null)
             {
@@ -56,7 +76,9 @@ namespace Tree.Classes
                 InOrder(root.RightChild);
             }
 
-            //output = root.value
+            arrayofInts.Add(root.Value);
+
+            return arrayofInts.ToArray();
         }
     }
 }
