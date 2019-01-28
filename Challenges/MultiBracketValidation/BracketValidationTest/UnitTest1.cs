@@ -12,5 +12,12 @@ namespace BracketValidationTest
             string test1 = "{}";
             Assert.True(Program.MultiBracketValidation(test1));
         }
+
+        [Fact]
+        public void InValidateUnmatchedBrackets()
+        {
+            string test2 = "{]}";
+            Assert.False(Program.MultiBracketValidation(test2));
+        }
     }
 }
