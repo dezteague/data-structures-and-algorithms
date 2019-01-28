@@ -38,12 +38,14 @@
 
             if (value < Root.Value)
             {
-                Root = LeftChild;
+                Root = Root.LeftChild;
             }
             else
             {
-                Root = RightChild;
+                Root = Root.RightChild;
             }
+
+            return false;
         }
        
     }
