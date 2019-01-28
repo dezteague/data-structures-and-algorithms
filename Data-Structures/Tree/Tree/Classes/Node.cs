@@ -7,8 +7,8 @@ namespace Tree.Classes
     public class Node
     {
         public int Value { get; set; }
-        public int LeftChild { get; set; }
-        public int RightChild { get; set; }
+        public Node LeftChild { get; set; }
+        public Node RightChild { get; set; }
 
         public Node()
         {

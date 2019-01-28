@@ -6,10 +6,57 @@ namespace Tree.Classes
 {
     public class BinaryTree
     {
-        //preOrder
+        public Node Root { get; set; }
 
+        public BinaryTree(Node node)
+        {
+            Root = node;
+        }
+
+        //preOrder
+        public void PreOrder(Node root)
+        {
+            //output = node.value
+
+            if (root.LeftChild != null)
+            {
+                PreOrder(root.LeftChild);
+            }
+            if (root.RightChild != null)
+            {
+                PreOrder(root.RightChild);
+            }
+        }
+            
         //inOrder
+        public void InOrder(Node root)
+        {
+            if(root.LeftChild != null)
+            {
+                InOrder(root.LeftChild);
+            }
+            
+            //output = node.value
+
+            if(root.RightChild != null)
+            {
+                InOrder(root.RightChild);
+            }
+        }
 
         //postOrder
+        public void PostOrder(Node root)
+        {
+            if (root.LeftChild != null)
+            {
+                PostOrder(root.LeftChild);
+            }
+            if (root.RightChild != null)
+            {
+                InOrder(root.RightChild);
+            }
+
+            //output = node.value
+        }
     }
 }
