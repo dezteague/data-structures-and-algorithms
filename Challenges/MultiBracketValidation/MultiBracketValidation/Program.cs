@@ -27,7 +27,33 @@ namespace MultiBracketValidation
                 //if there is a matching closing bracket, pop the opening bracket out of the stack
                 if (input[i] == ')')
                 {
-                    if(openingBracketStack.Top !=null && openingBracketStack.Top.Value == '[')
+                    if(openingBracketStack.Top !=null && openingBracketStack.Top.Value == '(')
+                    {
+                        openingBracketStack.Pop();
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+
+                //if there is a matching closing bracket, pop the opening bracket out of the stack
+                if (input[i] == ']')
+                {
+                    if (openingBracketStack.Top != null && openingBracketStack.Top.Value == '[')
+                    {
+                        openingBracketStack.Pop();
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+
+                //if there is a matching closing bracket, pop the opening bracket out of the stack
+                if (input[i] == '}')
+                {
+                    if (openingBracketStack.Top != null && openingBracketStack.Top.Value == '{')
                     {
                         openingBracketStack.Pop();
                     }
