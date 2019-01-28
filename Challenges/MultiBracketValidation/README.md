@@ -1,6 +1,6 @@
 # Multi-Bracket Validation
 
-Author: Deziree Teague with collaborator Ryna Truong
+Author: Deziree Teague with collaborators Ryna Truong & Clarice Costello
 
 ## Challenge
 
