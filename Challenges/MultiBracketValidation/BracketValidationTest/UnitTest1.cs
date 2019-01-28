@@ -19,5 +19,12 @@ namespace BracketValidationTest
             string test2 = "{]}";
             Assert.False(Program.MultiBracketValidation(test2));
         }
+
+        [Fact]
+        public void CheckLongString()
+        {
+            string test3 = "[{[]()}{()}]";
+            Assert.True(Program.MultiBracketValidation(test3));
+        }
     }
 }
