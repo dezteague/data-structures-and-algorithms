@@ -9,7 +9,12 @@
             Root = node;
         }
 
-        //add(value)
+        /// <summary>
+        /// add new node depending on whether the value is greater or less than the root
+        /// </summary>
+        /// <param name="root"></param>
+        /// <param name="value"></param>
+        /// <returns>node</returns>
         public Node Add(Node root, int value)
         {
             if (root == null)
@@ -28,7 +33,11 @@
             return root;
         }
 
-        //contains(value)
+        /// <summary>
+        /// search tree for input value based on whether the value is greater or less than the root.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns>boolean</returns>
         public bool Contains(int value)
         {
             if (Root.Value == value)
