@@ -8,7 +8,7 @@ Collaborator: Julie Ly
 
 Conduct “FizzBuzz” on a tree while traversing through it. Change the values of each of the nodes dependent on the current node’s value
 
-Without utilizing any of the built-in methods available to your language, determine weather or not the value of each node is divisible by 3, 5 or both, and change the value of each of the nodes:
+Without utilizing any of the built-in methods, determine weather or not the value of each node is divisible by 3, 5 or both, and change the value of each of the nodes:
 
 If the value is divisible by 3, replace the value with “Fizz”
 
