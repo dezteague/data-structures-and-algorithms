@@ -20,4 +20,10 @@
 
 [9.Challenge: MultiBracket Validation](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/MultiBracketValidation)
 
-[10.Implementation: Trees]
+[10.Implementation: Trees](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Data-Structures/Tree)
+
+[11. Challenge: FizzBuzzTree](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/FizzBuzzTree)
+
+[12. Challenge: Breadth-first Traversal](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/BreadthFirstTraversal)
+
+[13. Challenge: Find Maximum Value Binary Tree](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/FindMaxValueBinaryTree)
