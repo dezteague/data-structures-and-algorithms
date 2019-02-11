@@ -8,5 +8,10 @@ namespace AreCharactersUnique
         {
             Console.WriteLine("Hello World!");
         }
+
+        public static bool AreCharactersUnique(string str)
+        {
+            return false;
+        }
     }
 }
