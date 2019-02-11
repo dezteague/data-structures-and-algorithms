@@ -13,6 +13,8 @@ namespace CalculateBinaryTreeHeight
             root.RightChild = new Node(30);
             root.RightChild.LeftChild = new Node(40);
             root.RightChild.RightChild = new Node(50);
+
+            Console.WriteLine(CalculateBinaryTreeHeight(root));
         }
 
         public static int CalculateBinaryTreeHeight(Node root)
