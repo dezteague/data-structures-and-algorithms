@@ -2,7 +2,7 @@
 
 namespace AreCharactersUnique
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -17,6 +17,11 @@ namespace AreCharactersUnique
             AreCharactersUnique(realname);
         }
 
+        /// <summary>
+        /// Tests for unique characters in a string
+        /// </summary>
+        /// <param name="str">string</param>
+        /// <returns>true or false</returns>
         public static bool AreCharactersUnique(string str)
         {
             char[] chararray = str.ToCharArray();
