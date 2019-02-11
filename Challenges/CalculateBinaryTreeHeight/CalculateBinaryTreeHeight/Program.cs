@@ -19,14 +19,29 @@ namespace CalculateBinaryTreeHeight
 
         public static int CalculateBinaryTreeHeight(Node root)
         {
+            int height = 0;
+            int leftHeight = 0;
+            int rightHeight = 0;
+
             if (root == null)
             {
                 return 0;
             }
-            else
+            if (root != null)
             {
-                return Math.Max(CalculateBinaryTreeHeight(root.LeftChild), CalculateBinaryTreeHeight(root.RightChild));
+                leftHeight = Math.Abs(CalculateBinaryTreeHeight(root.LeftChild));
+                rightHeight = Math.Abs(CalculateBinaryTreeHeight(root.RightChild));
+
             }
+            if (leftHeight > rightHeight)
+            {
+                height= leftHeight;
+            }
+            if (rightHeight> leftHeight)
+            {
+                height= rightHeight;
+            }
+            return height;
         }
     }
 }
