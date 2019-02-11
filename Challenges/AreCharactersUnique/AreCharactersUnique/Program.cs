@@ -20,11 +20,11 @@ namespace AreCharactersUnique
         /// <summary>
         /// Tests for unique characters in a string
         /// </summary>
-        /// <param name="str">string</param>
+        /// <param name="input">string</param>
         /// <returns>true or false</returns>
-        public static bool AreCharactersUnique(string str)
+        public static bool AreCharactersUnique(string input)
         {
-            char[] chararray = str.ToCharArray();
+            char[] chararray = input.ToCharArray();
             for (int i = 0; i < chararray.Length; i++)
             {
                 for (int j = i + 1; j < chararray.Length; j++)

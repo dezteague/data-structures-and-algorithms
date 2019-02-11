@@ -19,5 +19,12 @@ namespace UniqueCharsTest
             string letters = "abcdefg";
             Assert.True(Program.AreCharactersUnique(letters));
         }
+
+        [Fact]
+        public void CaseSensitiveTest()
+        {
+            string cases = "aAbBcC";
+            Assert.True(Program.AreCharactersUnique(cases));
+        }
     }
 }
