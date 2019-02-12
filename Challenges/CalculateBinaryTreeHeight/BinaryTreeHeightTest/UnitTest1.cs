@@ -43,10 +43,10 @@ namespace BinaryTreeHeightTest
             root.RightChild.RightChild = new Node(50);
             root.RightChild.LeftChild.LeftChild = new Node(60);
 
-
             int height = Program.CalculateBinaryTreeHeight(root);
 
             Assert.Equal(4, height);
         }
+
     }
 }
