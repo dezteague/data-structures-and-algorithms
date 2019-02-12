@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CalculateBinaryTreeHeight\CalculateBinaryTreeHeight.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Tree">
       <HintPath>..\..\..\Data-Structures\Tree\Tree\bin\Debug\netcoreapp2.2\Tree.dll</HintPath>
     </Reference>

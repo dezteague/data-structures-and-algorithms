@@ -1,11 +1,12 @@
 ﻿using System;
 using Tree.Classes;
 
+
 namespace CalculateBinaryTreeHeight
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             Node root = new Node(10);
