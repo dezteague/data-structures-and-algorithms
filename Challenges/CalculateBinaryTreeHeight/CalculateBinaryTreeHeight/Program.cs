@@ -27,6 +27,11 @@ namespace CalculateBinaryTreeHeight
             Console.WriteLine(CalculateBinaryTreeHeight(testroot));
         }
 
+        /// <summary>
+        /// Finds the height of a binary tree
+        /// </summary>
+        /// <param name="root"></param>
+        /// <returns>height integer</returns>
         public static int CalculateBinaryTreeHeight(Node root)
         {
             int treeheight = 0;
