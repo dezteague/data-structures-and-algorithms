@@ -7,3 +7,5 @@ Contained here is an accumulation of different Data Structure and Algorithm impl
 1.[Linked List](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Data-Structures/LinkedList)
 
 2.[Stacks and Queues](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Data-Structures/StacksAndQueues)
+
+3.[Trees](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Data-Structures/Tree)
