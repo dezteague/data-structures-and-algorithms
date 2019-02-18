@@ -103,14 +103,28 @@ namespace Hashtables.Classes
         public object Get(string key)
         {
             int keyIndex = Hash(key);
+            
+            //if the key does not exist, return null
+            if (Htable[keyIndex].Key != key)
+            {
+                return null;
+            }
 
-            if (Contains(key))
+            //if the input key is equal to a key in the table, return its value pair
+            else if (Htable[keyIndex].Key == key)
             {
                 return Htable[keyIndex].Value;
             }
             else
             {
-                return null;
+                //in case of a collision
+                Node current = Htable[keyIndex];
+                while(current.Key != key)
+                {
+                    current = current.Next;
+                }
+                //return the value from a node in the linked list
+                return current.Value;
             }
         }
     }
