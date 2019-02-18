@@ -44,7 +44,7 @@ namespace Hashtables.Classes
         }
 
         /// <summary>
-        /// Add a node to the table and set its key:value properties
+        /// Add a node to the table and set its key:value properties.  If there is a collision, create linked list
         /// </summary>
         /// <param name="key"></param>
         /// <param name="value"></param>
@@ -72,6 +72,26 @@ namespace Hashtables.Classes
                 }
                 //new node is chained 
                 current.Next = newAddition;
+            }
+        }
+
+        /// <summary>
+        /// Determines whethere or not a key exists in a hashtable
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns>true/false</returns>
+        public bool Contains(string key)
+        {
+            int keyIndex = Hash(key);
+
+            //return true if they key property matches the input key
+            if (Htable[keyIndex].Key == key)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }
