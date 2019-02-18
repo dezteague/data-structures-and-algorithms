@@ -21,5 +21,13 @@ namespace InsertSortTest
             int[] results = new int[5] { 0, 1, 3, 4, 6 };
             Assert.Equal(results, Program.InsertionSort(array));
         }
+
+        [Fact]
+        public void BackwardsArrayReturnsSortedTest()
+        {
+            int[] array = new int[5] { 6, 4, 3, 1, 0 };
+            int[] results = new int[5] { 0, 1, 3, 4, 6 };
+            Assert.Equal(results, Program.InsertionSort(array));
+        }
     }
 }
