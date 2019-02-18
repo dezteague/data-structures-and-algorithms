@@ -105,7 +105,7 @@ namespace Hashtables.Classes
             int keyIndex = Hash(key);
             
             //if the key does not exist, return null
-            if (Htable[keyIndex].Key != key)
+            if (Htable[keyIndex].Key == null)
             {
                 return null;
             }
