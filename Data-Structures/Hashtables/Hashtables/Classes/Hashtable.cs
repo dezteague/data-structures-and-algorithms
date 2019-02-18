@@ -76,7 +76,7 @@ namespace Hashtables.Classes
         }
 
         /// <summary>
-        /// Determines whethere or not a key exists in a hashtable
+        /// Determines whether or not a key exists in a hashtable
         /// </summary>
         /// <param name="key"></param>
         /// <returns>true/false</returns>
@@ -84,7 +84,7 @@ namespace Hashtables.Classes
         {
             int keyIndex = Hash(key);
 
-            //return true if they key property matches the input key
+            //return true if the key property matches the input key
             if (Htable[keyIndex].Key == key)
             {
                 return true;
@@ -92,6 +92,25 @@ namespace Hashtables.Classes
             else
             {
                 return false;
+            }
+        }
+
+        /// <summary>
+        /// takes in the key and returns the value from the table.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns>value for the input key</returns>
+        public object Get(string key)
+        {
+            int keyIndex = Hash(key);
+
+            if (Contains(key))
+            {
+                return Htable[keyIndex].Value;
+            }
+            else
+            {
+                return null;
             }
         }
     }
