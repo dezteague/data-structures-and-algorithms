@@ -37,5 +37,13 @@ namespace InsertSortTest
             int[] results = new int[] { };
             Assert.Equal(results, Program.InsertionSort(array));
         }
+
+        [Fact]
+        public void SingleElementArrayReturnsOneTest()
+        {
+            int[] array = new int[1] { 6};
+            int[] results = new int[1] {6 };
+            Assert.Equal(results, Program.InsertionSort(array));
+        }
     }
 }
