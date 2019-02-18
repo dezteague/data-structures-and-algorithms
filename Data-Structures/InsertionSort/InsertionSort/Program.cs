@@ -2,14 +2,14 @@
 
 namespace InsertionSort
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
 
-        static int [] InsertionSort(int [] array)
+        public static int [] InsertionSort(int [] array)
         {
             //go through the length of the input array
             for (int i = 0; i < array.Length -1; i++)
