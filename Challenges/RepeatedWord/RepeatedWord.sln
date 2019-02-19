@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatedWord", "RepeatedWord\RepeatedWord.csproj", "{E49A5C43-F2AC-4910-AFBB-B2FF1B2BBCDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepeatedWord", "RepeatedWord\RepeatedWord.csproj", "{E49A5C43-F2AC-4910-AFBB-B2FF1B2BBCDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatedWordTest", "RepeatedWordTest\RepeatedWordTest.csproj", "{EB7490E8-E852-4DB9-828E-EBFD2E181CED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E49A5C43-F2AC-4910-AFBB-B2FF1B2BBCDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E49A5C43-F2AC-4910-AFBB-B2FF1B2BBCDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E49A5C43-F2AC-4910-AFBB-B2FF1B2BBCDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB7490E8-E852-4DB9-828E-EBFD2E181CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB7490E8-E852-4DB9-828E-EBFD2E181CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB7490E8-E852-4DB9-828E-EBFD2E181CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB7490E8-E852-4DB9-828E-EBFD2E181CED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
