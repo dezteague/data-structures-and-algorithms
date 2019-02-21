@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeftJoin", "LeftJoin\LeftJoin.csproj", "{373FC893-D3A8-4B30-B13C-353597D6C881}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeftJoinTest", "LeftJoinTest\LeftJoinTest.csproj", "{9E0A7B41-8FFE-41DF-9935-94DA5A7CBF71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{373FC893-D3A8-4B30-B13C-353597D6C881}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{373FC893-D3A8-4B30-B13C-353597D6C881}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{373FC893-D3A8-4B30-B13C-353597D6C881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E0A7B41-8FFE-41DF-9935-94DA5A7CBF71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E0A7B41-8FFE-41DF-9935-94DA5A7CBF71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E0A7B41-8FFE-41DF-9935-94DA5A7CBF71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E0A7B41-8FFE-41DF-9935-94DA5A7CBF71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
