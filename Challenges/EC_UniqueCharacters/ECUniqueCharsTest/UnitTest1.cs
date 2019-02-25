@@ -11,7 +11,6 @@ namespace ECUniqueCharsTest
         public void UniqueCharsTest()
         {
             string input = "hola";
-
             Assert.True(Program.Unique(input));
         }
     }
