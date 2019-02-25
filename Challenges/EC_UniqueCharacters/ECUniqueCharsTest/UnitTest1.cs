@@ -13,5 +13,12 @@ namespace ECUniqueCharsTest
             string input = "hola";
             Assert.True(Program.Unique(input));
         }
+
+        [Fact]
+        public void DuplicateCharsTest()
+        {
+            string input = "hello";
+            Assert.False(Program.Unique(input));
+        }
     }
 }
