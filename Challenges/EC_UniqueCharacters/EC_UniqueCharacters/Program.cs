@@ -15,7 +15,7 @@ namespace EC_UniqueCharacters
         /// </summary>
         /// <param name="input">input string</param>
         /// <returns>true or false</returns>
-        public bool Unique(string input)
+        public static bool Unique(string input)
         {
             //instanitate a new hashtable
             Hashtable set = new Hashtable(1024);
