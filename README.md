@@ -27,3 +27,15 @@
 [12. Challenge: Breadth-first Traversal](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/BreadthFirstTraversal)
 
 [13. Challenge: Find Maximum Value Binary Tree](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/FindMaxValueBinaryTree)
+
+[14. Implementation: Hashtables](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Data-Structures/Hashtables)
+
+[15. Implementation: Insertion Sort](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Data-Structures/InsertionSort)
+
+[16. Challenge: Repeated Word](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/RepeatedWord)
+
+[17. Challenge: Tree Intersection](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/TreeIntersection)
+
+[18. Challenge: Left Join](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/LeftJoin)
+
+[19. EC Challenge: Unique Characters](https://github.com/dezteague/data-structures-and-algorithms/tree/master/Challenges/EC_UniqueCharacters)
