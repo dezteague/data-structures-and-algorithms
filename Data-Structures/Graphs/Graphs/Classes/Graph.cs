@@ -9,5 +9,12 @@ namespace Graphs.Classes
         public Vertex Vertex { get; set; }
         public Edge Edge { get; set; }
         public int Size;
+
+        public Graph(Vertex vertex, Edge edge, int size)
+        {
+            edge = Edge;
+            vertex = Vertex;
+            size = Size;
+        }
     }
 }
