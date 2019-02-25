@@ -6,5 +6,8 @@ namespace Graphs.Classes
 {
     class Graph
     {
+        public Vertex Vertex { get; set; }
+        public Edge Edge { get; set; }
+        public int Size;
     }
 }
