@@ -10,6 +10,11 @@ namespace EC_UniqueCharacters
             Console.WriteLine("Hello World!");
         }
 
+        /// <summary>
+        /// Determine if a string has all unique characters
+        /// </summary>
+        /// <param name="input">input string</param>
+        /// <returns>true or false</returns>
         public bool Unique(string input)
         {
             Hashtable set = new Hashtable(1024);
@@ -24,9 +29,11 @@ namespace EC_UniqueCharacters
                 }
                 else
                 {
-                    set.Add(inputCharacter);
+                    set.Add(inputCharacter, inputCharacter);
                 }
             }
+
+            return true;
         }
     }
 }
