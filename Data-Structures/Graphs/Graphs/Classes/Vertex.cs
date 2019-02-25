@@ -4,7 +4,12 @@ using System.Text;
 
 namespace Graphs.Classes
 {
-    class Vertex
+    public class Vertex
     {
+        public object Value { get; set; }
+        public bool isVisited;
+        public int Neighbors { get; set; }
+
     }
+
 }
