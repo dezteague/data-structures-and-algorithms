@@ -16,14 +16,15 @@ namespace EC_UniqueCharacters
 
             for(int i = 0; i < input.Length; i++ )
             {
+                string inputCharacter = Convert.ToString(input[i]);
             
-                if(set.Contains(input[i]))
+                if(set.Contains(inputCharacter))
                 {
                     return false;
                 }
                 else
                 {
-                    set.Add(input[i]);
+                    set.Add(inputCharacter);
                 }
             }
         }
