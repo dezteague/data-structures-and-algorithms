@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Graphs.Classes
 {
-    class Graphs
+    public class Graphs
     {
         public Dictionary <Vertex, List<Vertex>> AdjacencyList {get; set;}
         public Vertex Vertex { get; set; }
