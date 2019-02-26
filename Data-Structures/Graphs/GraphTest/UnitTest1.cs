@@ -32,9 +32,14 @@ namespace GraphTest
         public void CanGetAllNodesTest()
         {
             VertexGraph graph = new VertexGraph();
-            graph.AddVertex(new Vertex());
-            graph.AddVertex(new Vertex());
-            Assert.Equal(2, graph.Size());
+            Vertex vertexA = new Vertex();
+            Vertex vertexB = new Vertex();
+            Vertex vertexC = new Vertex();
+            graph.AddVertex(vertexA);
+            graph.AddVertex(vertexB);
+            graph.AddVertex(vertexC);
+            List<Vertex> list = new List<Vertex>() { vertexA, vertexB, vertexC };
+            Assert.Equal(list, graph.GetNodes());
         }
 
         [Fact]
@@ -52,7 +57,10 @@ namespace GraphTest
         [Fact]
         public void CanGetSizeTest()
         {
-
+            VertexGraph graph = new VertexGraph();
+            graph.AddVertex(new Vertex());
+            graph.AddVertex(new Vertex());
+            Assert.Equal(2, graph.Size());
         }
 
         [Fact]
