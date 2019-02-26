@@ -41,10 +41,10 @@ namespace Graphs.Classes
             return AdjacencyList.Keys;
         }
 
-        public Vertex GetNeighbors(Vertex node)
+        public object GetNeighbors(Vertex vertex)
         {
             //returns a collection of nodes related to a given node
-            return List;
+            return AdjacencyList[vertex];
         }
 
         public int Size()
