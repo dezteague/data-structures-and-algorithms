@@ -25,10 +25,15 @@ namespace Graphs.Classes
             return Vertex;
         }
 
+        //take in two nodes and adds an edge between them
         public Vertex AddEdge(Vertex startVertex, Vertex endVertex, int weight)
         {
-            //take in two nodes and adds an edge between them
+            //create the edge
             Edges.Add(new Edge(startVertex, endVertex, weight));
+            //join nodes together
+            AdjacencyList[startVertex].Add(endVertex);
+            //return the start node
+            return startVertex;
         }
 
         public Vertex GetNodes()
