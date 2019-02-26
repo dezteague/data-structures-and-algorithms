@@ -6,16 +6,17 @@ namespace Graphs.Classes
 {
     class Graph
     {
+        public Dictionary <Vertex, List<Vertex>> AdjacencyList {get; set;}
         public Vertex Vertex { get; set; }
-        public Edge Edge { get; set; }
-        public int Size;
+        public List<Vertex> Edges { get; set; }
+   
 
-        public Graph(Vertex vertex, Edge edge, int size)
-        {
-            edge = Edge;
-            vertex = Vertex;
-            size = Size;
-        }
+        //public Graph(Vertex vertex, Edge edge, int size)
+        //{
+        //    edge = Edge;
+        //    vertex = Vertex;
+        //    size = Size;
+        //}
 
         public Vertex AddVertext()
         {
@@ -40,9 +41,10 @@ namespace Graphs.Classes
             return List;
         }
 
-        public int Size(Graph graph)
+        public int Size()
         {
             //returns total nodes in graph
+            return AdjacencyList.Count;
         }
     }
 }
