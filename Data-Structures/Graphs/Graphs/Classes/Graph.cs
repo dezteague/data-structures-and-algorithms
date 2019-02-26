@@ -18,8 +18,9 @@ namespace Graphs.Classes
         //    size = Size;
         //}
 
-        public Vertex AddVertext()
+        public Vertex AddVertex(Vertex vertex)
         {
+            AdjacencyList.Add(vertex, new List<Vertex>());
             //return the added node
             return Vertex;
         }

@@ -11,5 +11,4 @@ namespace Graphs.Classes
         public Neighbors<List<Vertex> { get; set; }
 
     }
-
 }
