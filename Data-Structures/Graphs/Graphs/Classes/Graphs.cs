@@ -4,14 +4,14 @@ using System.Text;
 
 namespace Graphs.Classes
 {
-    public class Graphs
+    public class VertexGraph
     {
         public Dictionary <Vertex, List<Vertex>> AdjacencyList {get; set;}
         public Vertex Vertex { get; set; }
         public List<Edge> Edges { get; set; }
 
 
-        public Graphs()
+        public VertexGraph()
         {
             AdjacencyList = new Dictionary<Vertex, List<Vertex>>();
             Edges = new List<Edge>();

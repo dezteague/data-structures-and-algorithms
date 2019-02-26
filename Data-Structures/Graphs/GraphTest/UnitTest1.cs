@@ -10,7 +10,9 @@ namespace GraphTest
         [Fact]
         public void CanAddNodeTest()
         {
-           
+            VertexGraph graph = new VertexGraph();
+            graph.AddVertex(new Vertex());
+            Assert.Equal(1, graph.Size());
         }
 
         [Fact]
