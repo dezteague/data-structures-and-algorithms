@@ -4,19 +4,18 @@ using System.Text;
 
 namespace Graphs.Classes
 {
-    class Graph
+    class Graphs
     {
         public Dictionary <Vertex, List<Vertex>> AdjacencyList {get; set;}
         public Vertex Vertex { get; set; }
         public List<Edge> Edges { get; set; }
-   
 
-        //public Graph(Vertex vertex, Edge edge, int size)
-        //{
-        //    edge = Edge;
-        //    vertex = Vertex;
-        //    size = Size;
-        //}
+
+        public Graphs()
+        {
+            AdjacencyList = new Dictionary<Vertex, List<Vertex>>();
+            Edges = new List<Edge>();
+        }
 
         public Vertex AddVertex(Vertex vertex)
         {
