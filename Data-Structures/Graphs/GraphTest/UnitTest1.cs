@@ -18,13 +18,23 @@ namespace GraphTest
         [Fact]
         public void CanAddEdgeTest()
         {
-
+            VertexGraph graph = new VertexGraph();
+            Vertex startVertex = new Vertex();
+            Vertex endVertex = new Vertex();
+            graph.AddVertex(startVertex);
+            graph.AddVertex(endVertex);
+            int weight = 5;
+            graph.AddEdge(startVertex, endVertex, weight);
+            Assert.Equal(startVertex, graph.AddEdge(startVertex,endVertex,weight));
         }
 
         [Fact]
         public void CanGetAllNodesTest()
         {
-
+            VertexGraph graph = new VertexGraph();
+            graph.AddVertex(new Vertex());
+            graph.AddVertex(new Vertex());
+            Assert.Equal(2, graph.Size());
         }
 
         [Fact]
