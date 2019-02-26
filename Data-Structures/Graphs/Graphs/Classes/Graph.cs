@@ -35,10 +35,10 @@ namespace Graphs.Classes
             return startVertex;
         }
 
-        public Vertex GetNodes()
+        public object GetNodes()
         {
-            //returns all nodes in the graph
-            return List;
+            //returns all nodes in the graph.  Adjacency list is similar to hashmap, it can return keys
+            return AdjacencyList.Keys;
         }
 
         public Vertex GetNeighbors(Vertex node)
