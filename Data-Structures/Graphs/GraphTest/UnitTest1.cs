@@ -45,7 +45,15 @@ namespace GraphTest
         [Fact]
         public void CanGetAllNeighborsTest()
         {
-
+            VertexGraph graph = new VertexGraph();
+            Vertex vertexA = new Vertex();
+            Vertex vertexB = new Vertex();
+            graph.AddVertex(vertexA);
+            graph.AddVertex(vertexB);
+            int weight = 5;
+            graph.AddEdge(vertexA, vertexB, weight);
+            List<Vertex> neighbors = new List<Vertex>() { vertexA, vertexB };
+            Assert.Equal(neighbors, graph.GetNeighbors(vertexA));
         }
 
         [Fact]
