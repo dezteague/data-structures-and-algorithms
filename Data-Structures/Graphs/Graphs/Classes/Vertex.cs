@@ -6,10 +6,8 @@ namespace Graphs.Classes
 {
     public class Vertex
     {
-        public object Value { get; set; }
+        public int Value { get; set; }
         public bool isVisited;
-        public int Neighbors { get; set; }
-
+        public List<Vertex> Neighbors { get; set; }
     }
-
 }
