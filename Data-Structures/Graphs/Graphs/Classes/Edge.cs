@@ -12,7 +12,9 @@ namespace Graphs.Classes
 
         public Edge(Vertex startVertex, Vertex endVertex, int weight)
         {
-
+            StartVertex = startVertex;
+            EndVertext = endVertex;
+            Weight = weight;
         }
     }
 }

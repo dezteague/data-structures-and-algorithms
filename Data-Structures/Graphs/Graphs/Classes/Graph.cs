@@ -8,7 +8,7 @@ namespace Graphs.Classes
     {
         public Dictionary <Vertex, List<Vertex>> AdjacencyList {get; set;}
         public Vertex Vertex { get; set; }
-        public List<Vertex> Edges { get; set; }
+        public List<Edge> Edges { get; set; }
    
 
         //public Graph(Vertex vertex, Edge edge, int size)
@@ -25,10 +25,10 @@ namespace Graphs.Classes
             return Vertex;
         }
 
-        public Vertex AddEdge(Vertex nodeOne, Vertex nodeTwo, int weight)
+        public Vertex AddEdge(Vertex startVertex, Vertex endVertex, int weight)
         {
             //take in two nodes and adds an edge between them
-            Edges.Add(new Edge( nodeOne, nodeTwo, weight));
+            Edges.Add(new Edge(startVertex, endVertex, weight));
         }
 
         public Vertex GetNodes()
