@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepthFirst", "DepthFirst\DepthFirst.csproj", "{721459B5-EB5E-4BF4-B98C-E25B4B40831F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepthFirstTest", "DepthFirstTest\DepthFirstTest.csproj", "{A385E188-2796-4AFE-8FFA-43434CBE54CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{721459B5-EB5E-4BF4-B98C-E25B4B40831F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721459B5-EB5E-4BF4-B98C-E25B4B40831F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721459B5-EB5E-4BF4-B98C-E25B4B40831F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721459B5-EB5E-4BF4-B98C-E25B4B40831F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A385E188-2796-4AFE-8FFA-43434CBE54CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A385E188-2796-4AFE-8FFA-43434CBE54CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A385E188-2796-4AFE-8FFA-43434CBE54CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A385E188-2796-4AFE-8FFA-43434CBE54CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A34F3092-38E4-4AEF-9458-89845DF29A72}
+	EndGlobalSection
+EndGlobal
